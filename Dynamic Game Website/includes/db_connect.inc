@@ -2,19 +2,19 @@
 //db_connect.inc
 //Check what server you are accessing
 if (strstr($_SERVER['SERVER_NAME'], 'localhost')) {
-    $servername = "localhost";
-    $username = "root";
+    $servername = "######";
+    $username = "#######";
     $password = "";
-    $dbname = "gameshop";
+    $dbname = "#######";
 } else {
-    $servername = "talsprddb02.int.its.rmit.edu.au";
+    $servername = "Taken out for privacy";
     //change to your own student number
-    $username = "s3668321";
+    $username = "#####";
     //change to your own Jacob 5 password
     //NOT your RMIT password
-    $password = "Rmit12345";
+    $password = "######";
     //change to your own student number
-    $dbname = "s3668321";
+    $dbname = "########";
 }
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
